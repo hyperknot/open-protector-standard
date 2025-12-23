@@ -1,7 +1,9 @@
-# open-protector-standard
+# Open Protector Standard
 An open-source back protector standard for paragliding harnesses
 
+[Standard](./standard/OPS2025.md)
 
+[Background](./background.md)
 
 
 
