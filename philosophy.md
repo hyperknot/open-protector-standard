@@ -91,19 +91,33 @@ I believe a realistic dummy weight for such pilot would be about:
 
 It is **almost double **of the currently used **50 kg dummy** weight!
 
-
-
 ---
 
 
 
 I believe there is no point of even discussing measurements, G, jerk, time based values or complex composite measures like HIC until we are putting pilots on protectors which are overloaded by almost a factor of 2x!
 
-If we would allow rescue parachutes with this overload, it'd be a scandal - yet with protectors we continue like nothing happens and start discussing complex measurements like HIC before even addressing the basic fault in the standard.
+If pilots were getting injured on overloaded rescue parachutes, it'd clearly be a scandal. Yet with protectors we continue like nothing happens and start discussing complex measurements like HIC before even addressing the basic fault in the standard.
 
 
 
 ---
+
+### 3. Spine area not tested
+
+Even though we have pod harnesses for at least 20 years, the current EN standard is still tested on a sitting harness dummy. 
+
+![fixed-drop-test](assets/fixed-drop-test.jpeg)
+
+(Illustration started as the one from Fred's video, I fixed the angles and made it cleaner.)
+
+Meanwhile we are sitting in harnesses extremely reclined like this.
+
+![measurement-blue](assets/measurement-blue.jpeg)
+
+(Background illustration copyright: GIN)
+
+
 
 
 
