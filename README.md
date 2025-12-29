@@ -1,7 +1,7 @@
 # Open Protector Standard
 An open-source back protector standard for paragliding harnesses.
 
-I recommend reading in the following order:
+Recommended reading order:
 
 1. [Problems and solutions](./problems_solutions.md)
 2. [OPS2025 standard](./standard/OPS2025.md)

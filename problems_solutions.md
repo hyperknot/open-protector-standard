@@ -89,7 +89,7 @@ But here lies a very serious logical fallacy! The primary criteria for all our m
 
 Which, for a competition pilot flying at 125 kg take off weight cannot be a 50 kg dummy weight!
 
-<img src="assets/sandbag.jpeg" alt="Illustration with a bag of sand" width="400">
+<img src="assets/sandbag.jpeg" alt="Illustration with a bag of sand" width="600">
 
 **Proposed solution:**
 
@@ -138,7 +138,7 @@ The existing standard takes care of the compression fracture direction quite wel
 
 
 
-<img src="assets/fixed-drop-test.jpeg" alt="fixed-drop-test" width="300">
+<img src="assets/fixed-drop-test.jpeg" alt="fixed-drop-test" width="250">
 
 *(Illustration started as the one from Fred's video, I fixed the angle and made it cleaner.)*
 
