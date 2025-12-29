@@ -132,7 +132,7 @@ There are two kind of injuries we need to take into account.
 
 
 
-![directhit](assets/directhit.png)
+<img src="assets/directhit.png" alt="directhit">
 
 The existing standard takes care of the compression fracture direction quite well, using the following dummy configuration.
 
@@ -150,7 +150,7 @@ Direct impact injuries are extremely common on failed takeoff and landings with 
 
 **Proposed solution:** **Add 2 more testing points along the spine**, in addition to the sitting position test point being done today.
 
-Proposed new testing points: 
+Proposed new testing points:
 
 - **thoracolumbar junction (T11 - L2 region)**
 - **lumbosacral junction (L5 - S1 region)**
@@ -175,7 +175,7 @@ This is especially relevant: problematic protectors, like Koroyd has multiple ti
 
 Meanwhile previous generation foam protectors are within the safe limits.
 
-**Proposed solution:** add a **jerk limit criteria** to the test. 
+**Proposed solution:** add a **jerk limit criteria** to the test.
 
 I'm not proposing to take the NASA limit. I'm proposing to re-measure this value on previous-generation known-safe harnesses (Exoceat, Kanibal 2) at a realistic dummy weight for an average comp pilot. (e.g. 75 kg).
 
@@ -185,7 +185,7 @@ I'm not proposing to take the NASA limit. I'm proposing to re-measure this value
 
 An other big problem with protectors like Koroyd is they are single-use materials: if they get crashed, they'll crumple and have to be replaced.
 
-![koroyd crumpled](assets/koroyd-crumpled.jpg)
+<img src="assets/koroyd-crumpled.jpg" alt="Koroyd crumpled" width="600">
 
 (Source: DHV)
 
@@ -193,7 +193,7 @@ This might not be problem for a hobbyist pilot making an XC flight, as they can 
 
 Meanwhile for cross-country competitions it is not acceptable: if someone uses their protector on the 1st day of a Cat1, they should not be risking their life flying with a crumpled protector during the next 9 tasks.
 
-**Proposed solution:** introduce two classes of protectors: 
+**Proposed solution:** introduce two classes of protectors:
 
 - single use (-S)
 - multi-use (-M)
@@ -208,9 +208,9 @@ Meanwhile, H&F events with supporters, might allow single-use (-S) protectors as
 
 
 
-## Safety problems with the upcoming EN draft
+## Problems with the upcoming EN draft
 
-*Note: As EN draft is not public and is still a work-in-progress, I'm referring to Fred Pieri's work as "EN draft". Fred's work can be seen in his [video](https://www.youtube.com/watch?v=EnRK16sgj8A) and [article](https://fredvol.bitbucket.io/Misc/jerk_analysis/p2/report_jerk_p2.html).*
+*Note: As EN draft is not public and is still a work-in-progress, I'm referring to Fred Pieri's work as "EN draft". Fred's work can be seen in his great [video](https://www.youtube.com/watch?v=EnRK16sgj8A) and [article](https://fredvol.bitbucket.io/Misc/jerk_analysis/p2/report_jerk_p2.html).*
 
 The main problems with the EN draft is that none of the previous points are being addressed.
 
@@ -224,15 +224,15 @@ I believe first we need to get the basic, wildly researched kinematic variables 
 
 Only once we got the basic variables right, we can start evaluating if HIC and other composite measures would bring an improvement.
 
-As for "SIC", I cannot wrap my head around the fact that the proposal takes something called "Head Injury Criterion" and changes an exponent from 2.5 -> 2 and renames it to "Spine Injury Criterion". 
+As for "SIC", I cannot wrap my head around the fact that the proposal takes something called "Head Injury Criterion" and changes an exponent from 2.5 -> 2 and renames it to "Spine Injury Criterion".
 
-![sic](assets/sic.gif)
+<img src="assets/sic.gif" alt="sic">
 
-This is just wrong on so many levels. Science doesn't work like this. We cannot just invent medical "criterions" by changing names and exponents without doing medical studies!
+This is wrong on many levels. Science doesn't work like this. We cannot just invent medical "criterions" by changing names and exponents without doing medical studies.
 
-I understand the idea behind it: it is to replace multiple time based limits (like 25 ms over 20 G) with a single line. We adjust the exponent to get the line correct. [Fred's video](https://www.youtube.com/watch?v=EnRK16sgj8A) does a brilliant job of explaining it
+I understand the idea behind it: it is to replace the step function limits (white line below) with a single line. We adjust the exponent to get the line angle correct. [Fred's video](https://www.youtube.com/watch?v=EnRK16sgj8A) does a brilliant job of explaining it.
 
-![SIC comparison](assets/CleanShot 2025-12-29 at 14.28.20@2x.png)
+<img src="assets/CleanShot 2025-12-29 at 14.28.20@2x.png" alt="SIC comparison">
 
 But please don't call it "Spine Injury Criterion", call it "Time-Acceleration Limit" or similar. I believe it's worth discussing, it's an interesting idea, it's just the name which I cannot get over.
 
@@ -242,32 +242,34 @@ But please don't call it "Spine Injury Criterion", call it "Time-Acceleration Li
 
 Now we've arrived at what I believe is the biggest question in back protectors:
 
-**Are time based limits actually reflecting pilot injuries?** 
+**Are time based limits actually reflecting pilot injuries?**
+
+I believe based on the pilot reports I collected for the article: [Protector Incident Research: Koroyd vs Airbag](https://hyperpilot.substack.com/p/protector-incident-research-koroyd), that the answer is **no**.
 
 Take this example from Fred's video.
 
-![blue vs orange G](assets/CleanShot 2025-12-29 at 14.33.47@2x.png)
+<img src="assets/CleanShot 2025-12-29 at 14.33.47@2x.png" alt="blue vs orange G">
 
-- The blue protector could be an average foam protector @ 40 G (Exoceat and Kanibal was better at 36-37 G).
-- The orange protector could be a very nice inflatable airbag @ 31 G.
+- The blue protector could be a below-average foam protector @ 40 G (Exoceat and Kanibal is at 36-37 G).
+- The orange protector could be a high quality inflatable airbag @ 31 G.
 
 The blue graph shows higher jerk (steeper sides) while the orange shows lower jerk (less steepness).
 
 Fred reasons that the blue is the safer protector and this is reflected in the SIC measure he is proposing: the blue protector gets the lower SIC value (10) vs the orange one (11).
 
-![blue vs orange SIC](assets/CleanShot 2025-12-29 at 18.56.51@2x.png)
+<img src="assets/CleanShot 2025-12-29 at 18.56.51@2x.png" alt="blue vs orange SIC">
 
 
 
-This is exactly the opposite of what I've found in my research: I'd choose the orange protector for my own protection today.
+This is exactly the opposite of what I've found in my research: I'd clearly choose the orange protector for my own protection today.
 
 **Why?**
 
-Because real-world pilot injury reports which I've collected for the article - [Protector Incident Research: Koroyd vs Airbag](https://hyperpilot.substack.com/p/protector-incident-research-koroyd) - show that the best protectors available today are low G, low jerk full-sized airbags, exactly, like the orange graph.
+Because real-world pilot injury reports show that the best protectors available today are **low G, low jerk full-sized airbags**, exactly like the orange protector.
 
-Moreover, if we look on the first graph, we can see that jerk and time-based limits are inversely correlated. 
+Moreover, if we look a bit on these graphs, we can see that jerk and time-based limits are inversely correlated: the steeper the curve => the shorter the "time above 20 G" horizontal line is.
 
-This is confirmed by the existing EN tests reports and their estimated jerk values:
+This is confirmed by the existing EN test reports and their estimated jerk values:
 
 - Gin GR5: 17.5 ms | jerk ~5369 G/sec
 
@@ -279,29 +281,25 @@ This is confirmed by the existing EN tests reports and their estimated jerk valu
 
 We can see that **protectors with the lowest jerk have the highest time-based limits.**
 
-At this point the two proposals (Jerk vs HIC) are in direct conflict: in real-world protectors, jerk and "time over 20 G" values seem to be inversely correlated.
+*Note: this comparison was only for the "time over 20 G" value, not the full HIC computation. It'd be great to calculate the exact values for these 5 harnesses above.*
 
-This is my biggest problem with the EN draft proposal: I see time-based limits not reflecting real-world pilot injuries.
+So here are my biggest problems with the HIC:
 
-Moreover I see how strict HIC limits would actually hurt the adaptation of inflatable airbags.
+- We don't know if HIC reflects real world injuries, whereas we know that high jerk does. The NASA studies and the pilot reports agree in this.
+- Time-based limits are inversely correlated with jerk. I'm afraid HIC is also behaving like this, possibly pushing us in the wrong direction and killing the safest protectors available today: inflatable airbags.
 
-Of course this is just my view and is only based on a few dozen accident reports, so feel free to question it.
-
-What is backed by scientific study though is the fact that the most dangerous protectors today have jerk limits way above what the NASA study proposes (1300 vs 8000 G/s.).
+Of course this is just my view and is only based on a few dozen accident reports, so feel free to question it. I understand that the accident reports are just "anecdata", but they do correlate with the NASA study.
 
 
 
 **Proposed solution 1**: I'd propose to go lower on jerk limits for now and set up a website to collect as much "back protector incident report" as we can. If there were 50 fatalities in Switzerland and France alone in a single year, then I believe there are thousands of cases where a protector makes a difference between hospital and walking away.
 
-CIVL should set up a very simple to use "back protector incident report" website where pilots can write a few line about their incident outcomes and upload IGC files. With IGC files, so we can analyse impact speeds, instead of just trusting pilot anecdotes.
+CIVL should set up a very simple to use "back protector incident report" website where pilots can write a few line about their incident outcomes and upload IGC files. With IGC files, we can analyse impact speeds, instead of just trusting pilot anecdotes.
 
 
 
-**Proposed solution 2**: Also, an interesting approach would be to make the same harnesses with different protectors, say honeycomb and inflatable airbags and let the market figure out the answer to which one is safer.
+**Proposed solution 2**: Also, an interesting approach would be to make comp harnesses with multiple protectors and let the market figure out the answer to which one is safer.
 
-For example, if Submarine 2 came out with an option of inflatable airbag + honeycomb protector, within a few season pilots would settle on the one with better real-world protector performance.
+For example, if Submarine 2 came out with an option of inflatable airbag and a honeycomb protector, within a few season pilots would settle on the one with better real-world performance.
 
-Of course this would require that the available space for a protector allows an inflatable protector to function correctly, for example 15 cm.
-
-
-
+Of course this would require that the available space for a protector allow an inflatable protector to function correctly, for example 15 cm, but jerk limits would take care of that.
