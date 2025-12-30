@@ -157,9 +157,9 @@ The NASA studies frequently referred to in back protector discussions focus on 3
 
 - acceleration (e.g. 42 G)
 - jerk (e.g. 1300 G/s)
-- time-based measurements (e.g. 25 ms over 20 G)
+- time duration measurements (e.g. 25 ms over 20 G)
 
-The current EN standard incorporates limits on acceleration and time-based measurements, while missing the jerk limit test.
+The current EN standard incorporates limits on acceleration and time duration measurements, while missing the jerk limit test.
 
 This is especially relevant: problematic protectors, like Koroyd, have multiple times the safe jerk limit of what NASA suggests.
 
@@ -200,8 +200,10 @@ Meanwhile, H&F events with supporters might allow single-use (-S) protectors as 
 
 I believe the main problem with the EN draft is two-fold:
 
-- it focuses only on time-based duration criteria
-- meanwhile avoiding the jerk (onset) criteria
+- it introduces extremely strict time duration limits
+- meanwhile entirely avoiding jerk (onset) limits
+
+This would result in killing possibly the safest harnesses today (inflatable airbags) and restricting the direction of protector developments onto honeycomb protectors.
 
 These two graphs are next to each other in the NASA 1959 Eiband study:
 
@@ -213,6 +215,8 @@ Page 81 shows the onset = jerk graph:
 
 ![nasa-onset](assets/nasa-onset.png)
 
+They come hand-in-hand, we cannot focus on one and skip the other.
+
 Looking at the duration graph, we can see that there is a middle section called "Limits upon which current ejection seats are designed".
 
 ![nasa-duration-red](assets/nasa-duration-red.png)
@@ -221,16 +225,18 @@ This area clearly has to be tolerable: this is exactly what NASA arrived for as 
 
 From the red graph, we can see that:
 
-- ~24 G is tolerable until 0.5 sec = 500 ms. This is way above anything we can possibly get in our 1.6 meter drop tests. 
+- ~24 G is tolerable until 0.5 sec = 500 ms. This is way above anything we can possibly get in a 1.6 meter drop tests. 
 - The NASA injury limit for 50 ms is ~42 G. We'll see it's simply impossible to reach this with the proposed jerk limits.
 
-Meanwhile the current EN test limits is already 20x (!) stricter compared to the NASA value: only 25 ms allowed above 20 G. In the new draft it looks like an even lower value at around 15 ms (the white diagonal line):
+Meanwhile the current EN test limits is already 20x (!) stricter compared to the NASA value: only 25 ms is allowed above 20 G. 
+
+In the new draft it introduces an even stricter value at around 15 ms (the white diagonal line):
 
 <img src="assets/hic-line.png" alt="SIC comparison">
 
 Why is it a problem to propose stricter duration limits compared to NASA ejection seat recommendations? 
 
-Because we'll see that duration values are inversely correlated to jerk values, and requiring low duration values would actually hurt jerk behaviour.
+Because we'll see that duration values are inversely correlated to jerk values, and requiring low duration values would actually hurt low jerk behaviour.
 
 At this point we've arrived at what I believe is the biggest question in back protectors:
 
@@ -257,7 +263,7 @@ This is exactly the opposite of what I've found in my research: I'd clearly choo
 
 Because real-world pilot injury reports show that the best protectors available today are **low G, low jerk full-sized airbags**, exactly like the orange protector.
 
-Moreover, if we look a bit on these graphs, we can see that jerk and time-based limits are inversely correlated: the steeper the curve => the shorter the "time above 20 G" horizontal line is.
+Moreover, if we look a bit on these graphs, we can see that jerk and duration limits are inversely correlated: the steeper the curve => the shorter the "time above 20 G" horizontal line is.
 
 This is confirmed by the existing EN test reports and their estimated jerk values:
 
@@ -275,7 +281,7 @@ I believe that by requiring these overly strict duration requirements, and not t
 
 **Proposed solution**
 
-I believe duration limits are actually not needed when we have jerk limits. 
+I believe time duration limits are actually not needed when we have jerk limits. 
 
 Why? Have a look at the visualizer app on [harnessvis.hyperknot.com](https://harnessvis.hyperknot.com/)
 
@@ -298,12 +304,5 @@ I understand the idea behind it: it is to replace the step function (yellow line
 <img src="assets/hic-line.png" alt="SIC comparison">
 
 But please don't call it "Spine Injury Criterion", call it "Time-Integrated Acceleration Criteria" as it's written a few seconds before. I believe it's worth discussing, it's an interesting idea, it's just the name which I disagree with.
-
-
-
-### 
-
-
-
 
 
