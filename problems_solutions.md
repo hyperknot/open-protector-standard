@@ -4,7 +4,7 @@ The aim of the Open Protector Standard is to address the problems with the EN ha
 
 The problems are twofold:
 
-1. The EN standard is not public—it is a copyrighted standard only accessible behind a paywall.
+1. The EN standard is not public - it is a copyrighted standard only accessible behind a paywall.
 1. The standard itself has serious safety problems in both the current versions and the upcoming EN draft.
 
 ## Standard behind a paywall
@@ -13,15 +13,13 @@ The first point is not the manufacturers' fault and is currently an active debat
 
 In 2024, the European Court of Justice ruled that certain European safety standards must be free to access (Case C-588/21 P). The logic was simple: if you're legally required to follow a standard, that standard is effectively law. And you shouldn't have to pay to read the law.
 
-This ruling specifically applies to "harmonised standards"—standards that are officially linked to EU safety regulations. Our harness back protector standards don't fall into that category, so this ruling doesn't automatically open them up.
+This ruling specifically applies to "harmonised standards" - standards that are officially linked to EU safety regulations. Our harness back protector standards don't fall into that category, so this ruling doesn't automatically open them up.
 
 But the principle still makes sense for us: we're talking about equipment that protects pilots from spinal injuries. Pilots, manufacturers, and safety researchers should all be able to read and evaluate how back protectors are being tested. Hiding safety standards behind a paywall doesn't help anyone.
 
 That said, even if the standard became free tomorrow, it wouldn't fix the real issue: the standard has serious safety flaws that need to be addressed.
 
 **Proposed solution**: Create an open-source standard that CIVL / EN WG6 / DHV can adopt and contribute to.
-
-
 
 ## Safety problems with the current EN standard
 
@@ -63,7 +61,7 @@ So if the 1 kg ball needs about 10 cm of compression to stop, the 10 kg ball mig
 
 I believe when such bottoming out happens, we can measure extreme acceleration and jerk values - way above any safe limit we normally even discuss in our standards.
 
-*Note: I'm looking for drop test CSV files of such bottomed-out drop tests on foam protectors. If you can, please share sample files.*
+_Note: I'm looking for drop test CSV files of such bottomed-out drop tests on foam protectors. If you can, please share sample files._
 
 #### Drop tests
 
@@ -77,15 +75,13 @@ At this point, I have to note that I'm absolutely puzzled by the fact that in ou
 
 **Proposed solution**: Introduce weight ranges. Test each protector at both ends of the weight range.
 
-
-
 ### 2. Under-calculated dummy weight
 
 There is another problem with the existing test's 50 kg dummy weight: it is extremely under-calculated.
 
 It is based on the faulty assumption that if we measure the forces acting on the pilot, we only care about the weight compressing the spine. Consequently, the current formula took the average adult torso weight of 50 kg and has used it for decades.
 
-But here lies a very serious logical fallacy! The primary criterion for all our measurements is to ensure that the protectors don't bottom out: it doesn't matter what's compressing them—it can be a pilot + harness + ballast or even a bag of sand! We are measuring how the protector behaves under real-world compression; thus, we have to simulate real-world compression events.
+But here lies a very serious logical fallacy! The primary criterion for all our measurements is to ensure that the protectors don't bottom out: it doesn't matter what's compressing them - it can be a pilot + harness + ballast or even a bag of sand! We are measuring how the protector behaves under real-world compression; thus, we have to simulate real-world compression events.
 
 For a competition pilot flying at 125 kg take-off weight, this cannot be a 50 kg dummy!
 
@@ -107,7 +103,7 @@ Quick estimation for the leg-first case:
 
 I believe a realistic dummy weight for such a pilot would be about:
 
-114 kg * 0.8 => **91 kg**.
+114 kg \* 0.8 => **91 kg**.
 
 It is **almost double** the currently used **50 kg dummy** weight!
 
@@ -132,7 +128,7 @@ The existing standard addresses the compression fracture direction quite well us
 
 <img src="assets/fixed-drop-test.jpeg" alt="fixed-drop-test" width="250">
 
-*(Illustration based on the one from Fred's video; I fixed the angle and made it cleaner.)*
+_(Illustration based on the one from Fred's video; I fixed the angle and made it cleaner.)_
 
 What's not addressed are **direct impact injuries**.
 
@@ -142,8 +138,8 @@ Direct impact injuries are extremely common during failed takeoffs and landings 
 
 Proposed new testing points:
 
-- **thoracolumbar junction (T11 – L2 region)**
-- **lumbosacral junction (L5 – S1 region)**
+- **thoracolumbar junction (T11 - L2 region)**
+- **lumbosacral junction (L5 - S1 region)**
 
 Both are critical points for direct impact injuries.
 
@@ -193,9 +189,10 @@ Who decides which class to use: the manufacturers submit their product in the cl
 The decision between -S and -M would be enforced at the competition level; for example, cross-country Cat1 events could require multi-use (-M) protectors.
 
 Meanwhile, H&F events with supporters might allow single-use (-S) protectors as well, as a supporter in the car can carry a spare protector.
+
 ## Problems with the upcoming EN draft
 
-*Note: As the EN draft is not public and is still a work-in-progress, I'm referring to Fred Pieri's work as "EN draft". Fred's work can be seen in his great [video](https://www.youtube.com/watch?v=EnRK16sgj8A) and [article](https://fredvol.bitbucket.io/Misc/jerk_analysis/p2/report_jerk_p2.html).*
+_Note: As the EN draft is not public and is still a work-in-progress, I'm referring to Fred Pieri's work as "EN draft". Fred's work can be seen in his great [video](https://www.youtube.com/watch?v=EnRK16sgj8A) and [article](https://fredvol.bitbucket.io/Misc/jerk_analysis/p2/report_jerk_p2.html)._
 
 I believe the main problem with the EN draft is twofold:
 
@@ -282,7 +279,7 @@ I believe time duration limits are actually not needed when we have jerk limits.
 
 Why? Have a look at the visualizer app on [harnessvis.hyperknot.com](https://harnessvis.hyperknot.com/)
 
-Even at 2000 G/sec average jerk, we can only reach 34 G, so the 42 G limit is not relevant. And even if we count the "Time over 20 G" duration 2× because of a bounce, we are only at 2 * 14 = 28 ms, well below the NASA ejector seat limit of 500 ms.
+Even at 2000 G/sec average jerk, we can only reach 34 G, so the 42 G limit is not relevant. And even if we count the "Time over 20 G" duration 2× because of a bounce, we are only at 2 \* 14 = 28 ms, well below the NASA ejector seat limit of 500 ms.
 
 ![harness visualizer](assets/harnessvis.png)
 

@@ -6,7 +6,7 @@ No, it's not. We can do it using the existing drop test equipment. We can simply
 
 As a first step, we need to filter the acceleration data. I believe this is unrelated to measuring jerk; this step would be required for calculating any composite measures, like DRI. Even simple "max G" tests could be affected by noise and should be using filtered data.
 
-The acceleration filter I proposed is the well-known and extremely well-researched "CFC" filter, used for filtering crash test acceleration sensors—exactly what we need. Case in point, EAPR was using this filter in their harness drop tests 18 (?) years ago. It is defined both in the ISO 6487 and [SAE J211/1](https://law.resource.org/pub/us/cfr/ibr/005/sae.j211-1.1995.pdf) standards.
+The acceleration filter I proposed is the well-known and extremely well-researched "CFC" filter, used for filtering crash test acceleration sensors - exactly what we need. Case in point, EAPR was using this filter in their harness drop tests 18 (?) years ago. It is defined both in the ISO 6487 and [SAE J211/1](https://law.resource.org/pub/us/cfr/ibr/005/sae.j211-1.1995.pdf) standards.
 
 The only value we need to agree on here is the window size or CFC class. I propose CFC 75, based on the CSV samples Fred shared. We can look at more CSV files and settle on a value that filters the noise while keeping the signal.
 
@@ -14,13 +14,13 @@ A bigger problem is self-resonance / ringing of badly attached sensors on the dr
 
 Having an open document for troubleshooting sensor attachment issues would be beneficial for everyone.
 
-Once we have the sensor attachments fixed and the CFC filter applied, getting jerk from acceleration is actually quite simple. I propose calculating the derivative using the Savitzky–Golay filter as it results in smooth values. The only parameter we need to agree on here is again the window size, for which I propose 15 ms.
+Once we have the sensor attachments fixed and the CFC filter applied, getting jerk from acceleration is actually quite simple. I propose calculating the derivative using the Savitzky - Golay filter as it results in smooth values. The only parameter we need to agree on here is again the window size, for which I propose 15 ms.
 
 ### Wouldn't heavy pilots need bigger protectors, thus giving them an aerodynamic disadvantage?
 
-This might seem surprising, but heavier pilots don't actually need thicker protectors. They need a different protector material, like stiffer foams in the case of foam protectors. A protector certified for 50–60 kg could be equally thin as one certified for 100–120 kg.
+This might seem surprising, but heavier pilots don't actually need thicker protectors. They need a different protector material, like stiffer foams in the case of foam protectors. A protector certified for 50 - 60 kg could be equally thin as one certified for 100 - 120 kg.
 
-What makes a protector thick is the need to cover a wide weight range, like 50–120 kg.
+What makes a protector thick is the need to cover a wide weight range, like 50 - 120 kg.
 
 Interesting bit: the lower end of the weight range is critical for the jerk test, while the upper end is critical for the acceleration / G test.
 
@@ -68,7 +68,7 @@ The relevant reports are:
 
 [Mckenney, William R., 1970 - Human Tolerance To Abrupt Accelerations](https://apps.dtic.mil/sti/tr/pdf/AD0708916.pdf)
 
-[U.S. NAVAL Flight Surgeon’s Manual](https://www.scribd.com/doc/49951730/FlightSurgeonsManual).
+[U.S. NAVAL Flight Surgeon's Manual](https://www.scribd.com/doc/49951730/FlightSurgeonsManual).
 
 The Eiband 1959 PDF shows the duration graph on page 78:
 

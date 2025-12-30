@@ -1,4 +1,5 @@
 # Open Protector Standard
+
 An open-source back protector standard for paragliding harnesses.
 
 Recommended reading order:
@@ -19,4 +20,3 @@ To maximize reuse and adoption in safety regulations, the **text content** of th
 > CC0 enables scientists, educators, and creators to waive interests in their works and thereby place them as completely as possible in the public domain, so that others may freely build upon, enhance and reuse the works for any purposes without restriction.
 
 **Note:** This waiver applies to the specifications and text only. It does **not** apply to images in the `assets/` folder, which remain under their respective third-party copyrights.
-
