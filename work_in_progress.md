@@ -20,6 +20,3 @@ It remains undecided whether protectors should be tested:
 
 The current standard specifies total test weight but does not define how supplemental weights should be distributed on the dummy. This may affect impact dynamics and requires specification.
 
-## Posture Reference Angles
-
-The 45° torso angle for LS posture should be clarified: whether it is measured relative to the torso plane or another reference.
