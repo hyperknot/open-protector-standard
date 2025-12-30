@@ -1,21 +1,5 @@
 # Questions
 
-### Isn't measuring jerk complicated and expensive?
-
-No, it's not. We can do it using the existing drop test equipment. We can simply calculate it from the drop test CSV files via software tools.
-
-As a first step, we need to filter the acceleration data. I believe this is unrelated to measuring jerk; this step would be required for calculating any composite measures, like DRI. Even simple "max G" tests could be affected by noise and should be using filtered data.
-
-The acceleration filter I proposed is the well-known and extremely well-researched "CFC" filter, used for filtering crash test acceleration sensors - exactly what we need. Case in point, EAPR was using this filter in their harness drop tests 18 (?) years ago. It is defined both in the ISO 6487 and [SAE J211/1](https://law.resource.org/pub/us/cfr/ibr/005/sae.j211-1.1995.pdf) standards.
-
-The only value we need to agree on here is the window size or CFC class. I propose CFC 75, based on the CSV samples Fred shared. We can look at more CSV files and settle on a value that filters the noise while keeping the signal.
-
-A bigger problem is self-resonance / ringing of badly attached sensors on the drop test equipment. But this part needs to be fixed anyway, as it can invalidate all kinds of tests, not just jerk measurements. This shows up as resonance / waves with a constant period on the drop test graphs.
-
-Having an open document for troubleshooting sensor attachment issues would be beneficial for everyone.
-
-Once we have the sensor attachments fixed and the CFC filter applied, getting jerk from acceleration is actually quite simple. I propose calculating the derivative using the Savitzky - Golay filter as it results in smooth values. The only parameter we need to agree on here is again the window size, for which I propose 15 ms.
-
 ### Wouldn't heavy pilots need bigger protectors, thus giving them an aerodynamic disadvantage?
 
 This might seem surprising, but heavier pilots don't actually need thicker protectors. They need a different protector material, like stiffer foams in the case of foam protectors. A protector certified for 50 - 60 kg could be equally thin as one certified for 100 - 120 kg.
@@ -24,13 +8,9 @@ What makes a protector thick is the need to cover a wide weight range, like 50 -
 
 Interesting bit: the lower end of the weight range is critical for the jerk test, while the upper end is critical for the acceleration / G test.
 
-### Isn't this expensive for small manufacturers?
-
-This is only an additional test for those manufacturers who want to make racing harnesses for Cat1 and high-level comps. Manufacturers not targeting this group are not affected.
-
 ### What about visibility?
 
-Manufacturers say that making thicker protectors will make visibility worse. I don't agree with this.
+Manufacturers say that making thicker protectors will make visibility worse. I don't agree with this direction.
 
 We used to have good visibility and good protectors. This work now addresses the protectors, and we can look into visibility in the coming years.
 
@@ -48,9 +28,29 @@ In the current form, no one. The point of the Open Protector Standard is that it
 
 So in practice, this could become the CIVL Protector Standard and be certified like CCC gliders today. Or DHV can adopt it into their standard. Or EN can address these points, and then we can make this standard shorter and shorter over time.
 
+
+
+### Isn't measuring jerk complicated and expensive?
+
+No, it's not. We can do it using the existing drop test equipment. We can simply calculate it from the drop test CSV files via software tools.
+
+As a first step, we need to filter the acceleration data. I believe this is unrelated to measuring jerk; this step would be required for calculating any composite measures, like DRI. Even simple "max G" tests could be affected by noise and should be using filtered data.
+
+The acceleration filter I proposed is the well-known and extremely well-researched "CFC" filter, used for filtering crash test acceleration sensors - exactly what we need. Case in point, EAPR was using this filter in their harness drop tests 18 (?) years ago. It is defined both in the ISO 6487 and [SAE J211/1](https://law.resource.org/pub/us/cfr/ibr/005/sae.j211-1.1995.pdf) standards.
+
+The only value we need to agree on here is the CFC class. I propose CFC 75, based on the CSV samples Fred shared. We can look at more CSV files and settle on a value that filters the noise while keeping the signal.
+
+A bigger problem is self-resonance / ringing of badly attached sensors on the drop test equipment. But this part needs to be fixed anyway, as it can invalidate all kinds of tests, not just jerk measurements. This shows up as resonance / waves on the jerk graph.
+
+Once we have the sensor attachments fixed and the CFC filter applied, getting jerk from acceleration is actually quite simple. I propose calculating the derivative using the Savitzky-Golay filter as it results in smooth derivatives. The only parameter we need to agree on is the window size, for which I propose 15 ms.
+
+### Isn't this expensive for small manufacturers?
+
+This is only an additional test for those manufacturers who want to make racing harnesses for Cat1 and high-level comps. Manufacturers not targeting this group are not affected.
+
 ### What about Koroyd tubes rotating / not crumpling?
 
-We can add tests like doing drop tests on 30 / 45 / 60-degree anvils, but we might never be able to cover all possible failure cases.
+We can add drop tests on 30 / 45 / 60-degree anvils, but we might never be able to cover all possible failure cases.
 
 The real solution would be to allow CIVL to suspend equipment from Cat1 events where real-world behavior differs from the one shown in the test environment.
 
