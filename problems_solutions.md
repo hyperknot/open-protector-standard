@@ -274,7 +274,7 @@ I believe that by requiring these overly strict duration requirements, and not t
 
 **Proposed solution**
 
-I believe time duration limits are actually not needed when we have jerk limits.
+I believe **time duration limits are actually not needed** when we have jerk limits.
 
 Why? Have a look at the visualizer app on [harnessvis.hyperknot.com](https://harnessvis.hyperknot.com/)
 
