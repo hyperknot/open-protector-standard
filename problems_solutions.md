@@ -151,53 +151,48 @@ Anatomy illustration from Wikipedia:
 
 <img src="assets/vertebrae-wikipedia.png" alt="Vertebrae column" width="200">
 
-
 ### 4. Missing jerk limit
 
-The NASA studies frequently referred in back protector discussions do studies on 3 kinematic variables:
+The NASA studies frequently referred to in back protector discussions focus on 3 kinematic variables:
 
 - acceleration (e.g. 42 G)
 - jerk (e.g. 1300 G/s)
-- time based measurements (e.g. 25 ms over 20 G)
+- time-based measurements (e.g. 25 ms over 20 G)
 
-The current EN standard incorporates limits on acceleration and time based measurements, while missing the jerk limit test.
+The current EN standard incorporates limits on acceleration and time-based measurements, while missing the jerk limit test.
 
-This is especially relevant: problematic protectors, like Koroyd has multiple times the safe jerk limit of what NASA suggests.
+This is especially relevant: problematic protectors, like Koroyd, have multiple times the safe jerk limit of what NASA suggests.
 
-Meanwhile previous generation foam protectors are within the safe limits.
+Meanwhile, previous-generation foam protectors are within the safe limits.
 
-**Proposed solution:** add a **jerk limit criteria** to the test.
+**Proposed solution:** add a **jerk limit criterion** to the test.
 
-I'm not proposing to take the NASA limit. I'm proposing to re-measure this value on previous-generation known-safe harnesses (Exoceat, Kanibal 2) at a realistic dummy weight for an average comp pilot. (e.g. 75 kg).
+I'm not proposing to adopt the NASA limit. I'm proposing to re-measure this value on previous-generation known-safe harnesses (Exoceat, Kanibal 2) at a realistic dummy weight for an average comp pilot (e.g. 75 kg).
 
+### 5. Single-use protectors in competitions
 
-
-### 5. Single-use protectors on competitions
-
-An other big problem with protectors like Koroyd is they are single-use materials: if they get crashed, they'll crumple and have to be replaced.
+Another big problem with protectors like Koroyd is that they are single-use materials: if they are involved in a crash, they'll crumple and have to be replaced.
 
 <img src="assets/koroyd-crumpled.jpg" alt="Koroyd crumpled" width="600">
 
 (Source: DHV)
 
-This might not be problem for a hobbyist pilot making an XC flight, as they can just wait with their next flight until they bought a new protector.
+This might not be a problem for a hobbyist pilot making an XC flight, as they can just wait with their next flight until they buy a new protector.
 
-Meanwhile for cross-country competitions it is not acceptable: if someone uses their protector on the 1st day of a Cat1, they should not be risking their life flying with a crumpled protector during the next 9 tasks.
+Meanwhile, for cross-country competitions it is not acceptable: if someone uses their protector on the 1st day of a Cat1, they should not be risking their life flying with a crumpled protector during the next 9 tasks.
 
 **Proposed solution:** introduce two classes of protectors:
 
-- single use (-S)
+- single-use (-S)
 - multi-use (-M)
 
-The tests are identical, except for multi-use protectors, the process starts with stress-test: making 5 unmeasured drops at the upper weight limit. The real, measured drop tests start afterward.
+The tests are identical, except that for multi-use protectors, the process starts with a stress test: making 5 unmeasured drops at the upper weight limit. The real, measured drop tests start afterward.
 
 Who decides which class to use: the manufacturers submit their product in the class they choose.
 
-The decision between -S and -M would be enforced on competition level, for example cross-country Cat1 events could require multi-use (-M) protectors.
+The decision between -S and -M would be enforced at the competition level; for example, cross-country Cat1 events could require multi-use (-M) protectors.
 
-Meanwhile, H&F events with supporters, might allow single-use (-S) protectors as well, as a supporter in the car can carry a spare protector.
-
-
+Meanwhile, H&F events with supporters might allow single-use (-S) protectors as well, as a supporter in the car can carry a spare protector.
 
 ## Problems with the upcoming EN draft
 
