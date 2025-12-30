@@ -1,50 +1,30 @@
-### Questions
-
-#### What about Koroyd tubes rotating / not crumpling?
-
-It should not be part of the standard. CIVL should have the right to suspend those harnesses where real-world behaviour differs from the one shown in test environment (aka Dieselgate).
-
-
-
-#### Wouldn't heavy pilots need bigger protectors thus giving them aerodynamical disadvantage?
-
-This might seem surprising, but heavier pilots don't actually need thicker protectors. They need a different protector material, like foam density in case of foam protectors. A protector certified for 50-60 kg could be equally thin as one certified for 100-120 kg.
-
-What makes it thick is if it wants to cover a wide weight range, like 50-120 kg.
-
-Interesting bit: the lower end of the weight range is critical for the jerk test, while the upper end is critical for the acceleration / G test.
-
-
-
-#### What's the deal with the -S and -M classes? Who decides what does one harness get?
-
-The -S and -M classes introduce distinction between single-use and multi-use protector materials.
-
-CIVL and comp organizers should require given classes for given competitions, for example -M (multi-use) version should be required for XC Cat1 comps, where if a pilot crashes their protector on the first task, they cannot afford to fly 9 more tasks without protector.
-
-The manufacturer decides what class does he want to submit a given model into.
-
-H&F races might choose the -S (single use) version where a supporter can be expected to carry a spare protector in their car.
-
-
-
-#### Can we test a harness's behaviour for higher impact velocities by testing with higher weights?
-
-Unfortunately not. Even though a 50 kg weight dropped from 1.6 meters has the same energy (mgh) as a 100 kg weight dropped from 0.8 meters, their compression events will be very different.
-
-Thus we cannot simulate for higher impact velocities by adding weights, we'll need to use drop test machines with bigger drop test heights.
-
-
+# Questions
 
 ### Isn't measuring jerk complicated and expensive?
 
-No, it's not, it's available on the existing equipment, using the existing sensors and digital tools. It can be simply calculated using software tools on CSV files.
+No, it's not. We can do it using the existing drop test equipments. We can simply calculate it from the drop test CSV files via software tools.
 
-What can show up as error is self-resonance / ringing of badly attached sensors on the drop test equipment. But this part needs to be fixed anyway, as it can invalidate all kind of tests, not just jerk measurements.
+For the first step we need to filter the acceleration data. I believe this is unrelated to measuring jerk, this step would be required for calculating any composite measures, like DRI. Even simple "max G" tests could be affected by noise and should be using filtered data.
 
-The issue is usually physical attachment of the sensor, a super tight attachment is necessary for noise-free measurements. Ideal is metal-to-metal attachments.
+The acceleration filter I proposed is the well known and extremely well researched "CFC" filter, used for filtering crash test acceleration sensors - exactly what we need. Case in point, EAPR has been using this filter in their harness drop test 18 (?) years ago. It is defined both in the ISO 6487 and [SAE J211/1](https://law.resource.org/pub/us/cfr/ibr/005/sae.j211-1.1995.pdf) standards.
 
-When the sensor attachment is not tight enough, the sensor itself starts resonating after a drop and oscillating patters will be visible on the jerk graph. Fixing the sensor attachment can solve this problem.
+The only value we need to agree on here is the window size or CFC class. I propose CFC 75, based on the CSV samples Fred shared. We can look at more CSV files and settle on a value such that it filters the noise while keeping the signal.
+
+A bigger problem is self-resonance / ringing of badly attached sensors on the drop test equipment. But this part needs to be fixed anyway, as it can invalidate all kind of tests, not just jerk measurements. This shows up as resonance / waves with constant period on the drop test graphs.
+
+Having an open document for troubleshooting sensor-attachment issues would be beneficial for everyone.
+
+Once we have the sensor attachments fixed and the CFC sensor applied, getting jerk from acceleration is actually quite simple. I propose calculating the derivative using Savitzky - Golay filter as it results in smooth values. The only parameter we need to agree here is again the window size, for which I propose 15 ms. 
+
+
+
+### Wouldn't heavy pilots need bigger protectors thus giving them aerodynamical disadvantage?
+
+This might seem surprising, but heavier pilots don't actually need thicker protectors. They need a different protector material, like stiffer foams in case of foam protectors. A protector certified for 50-60 kg could be equally thin as one certified for 100-120 kg.
+
+What makes a protector thick is if it wants to cover a wide weight range, like 50-120 kg.
+
+Interesting bit: the lower end of the weight range is critical for the jerk test, while the upper end is critical for the acceleration / G test.
 
 
 
@@ -56,13 +36,17 @@ This is only an additional test for those manufacturers who want to make racing 
 
 ### What about visibility?
 
-Manufacturers say that adding protectors will make visibility worse. This supposes that every harness needs to have a perfectly circular cross section with a cigar-shape along the horizontal axis.
+Manufacturers say that making thicker protectors will make visibility worse. I don't agree with this.
 
-None of this is a rule set in stone, it's just easier to make harnesses like this. 3D shaping might be more complicated than uniform shapes, but we shouldn't believe that these rules are set in stone.
+We used to have good visibility and good protectors. This work now addresses the protectors and we can look into visibility in the next years.
 
-We used to have good visibility and good protectors.
+The manufacturer statement is based on the assumption is that every harness needs to have a perfectly circular cross section with a symmetrical cigar-shape along the horizontal axis.
 
-This work now addresses the protectors. We can look into visibility in the next years. Many believe it can be solved even with thicker protectors.
+None of this is a rule set in stone, it's just easier to make harnesses like this. 
+
+Manufacturers can use 3D shaping to make the front part narrower compared to the back part, or to add a protector "bump" on the back.
+
+We can also work on making XC racing less gaggle-focused by rules and task setting.
 
 
 
@@ -70,17 +54,47 @@ This work now addresses the protectors. We can look into visibility in the next 
 
 In the current form no one. The point of Open Protector Standard is that it can be adopted by CIVL, EN WG6, DHV or any other standard body.
 
-So in practice, this could become CIVL Protector Standard and be certified like CCC gliders today.
+So in practice, this could become CIVL Protector Standard and be certified like CCC gliders today. Or DHV can adopt it into their standard and then we'd all be racing with DHV certified harnesses. Or EN can address these points and then we can make this standard shorter and shorter over time.
 
 
 
 
 
+### What about Koroyd tubes rotating / not crumpling?
+
+We can add tests like doing a drop test on a 30 / 45 / 60 degree anvils, but we might never be able to cover all possible failure cases. 
+
+The real solution would be to allow CIVL to suspend equipment from Cat1 events where real-world behaviour differs from the one shown in test environment.
 
 
 
+### Can we test a harness's behaviour for higher impact velocities by testing with higher weights?
+
+Unfortunately not. Even though a 50 kg weight dropped from 1.6 meters has the same energy as a 100 kg weight dropped from 0.8 meters (E = m\*g\*h), their compression behaviour are different.
+
+Thus we cannot simulate for higher impact velocities by adding weights, we'll need to use higher drop machines to measure that.
 
 
+
+### Where is the research for NASA's jerk studies?
+
+The relevant reports are
+
+[Eiband, A. Martin, 1959 - Human Tolerance to Rapidly Applied Accelerations](https://ntrs.nasa.gov/api/citations/19980228043/downloads/19980228043.pdf)
+
+[Mckenney, William R., 1970 - Human Tolerance To Abrupt Accelerations](https://apps.dtic.mil/sti/tr/pdf/AD0708916.pdf) 
+
+[U.S. NAVAL Flight  Surgeon’s Manual](https://www.scribd.com/doc/49951730/FlightSurgeonsManual).
+
+
+
+In the Eiband 1959 PDF, on page 78 shows the duration graph.
+
+![nasa-duration](assets/nasa-duration.png)
+
+And page 81 shows the onset = jerk graph:
+
+![nasa-onset](assets/nasa-onset.png)
 
 
 

@@ -1,14 +1,20 @@
-Consult with medical researchers
+
+
+## Consult with medical researchers
+
+Verify that the new additional points are correct.
 
 
 
-## B.2 Point Positioning and Coverage Verification
+## T12 coverage
 
-The following items require specification:
+We need to specify what it means that the dummy is "covering" the T12 point. The point shouldn't be on the edge of the protector and this needs to be specified somehow.
 
-- Tolerances for aligning impact to SB/LS/T12 markings (what "centered" means precisely).
+Should we say it has to covered by at least 10 cm? Or should we simply ask for a higher vertebrae, like T7?
 
-## B.3 Test Configuration: Standalone vs. In-Harness
+
+
+## Standalone vs. In-Harness
 
 It remains undecided whether protectors should be tested:
 
@@ -16,23 +22,17 @@ It remains undecided whether protectors should be tested:
 - Installed in a harness
 - Either configuration at manufacturer's choice
 
-## B.4 Weight Mapping Refinement
 
-The relationship between test weight and clip-in weight (Section 3.4) uses a factor of 0.80. This approximation may require validation across different harness configurations and pilot weight ranges. The formula may be updated via errata without affecting certifications issued under test weight.
 
-## B.5 Dummy Weight Distribution
+## Dummy Weight Distribution
 
 The current standard specifies total test weight but does not define how supplemental weights should be distributed on the dummy. This may affect impact dynamics and requires specification.
 
-## B.6 LS Posture Reference Angle
-
-The 45° torso angle for LS posture should be clarified: whether it is measured relative to the torso plane or another reference. For 90° dummy configurations this distinction is immaterial, but it may matter for other configurations.
 
 
+## Posture Reference Angles
+
+The 45° torso angle for LS posture should be clarified: whether it is measured relative to the torso plane or another reference. 
 
 
-
-
-
-Share Drop CSV files! Please share those, everything you do on your own instruments you can share if you want.
 

@@ -212,35 +212,41 @@ Meanwhile, H&F events with supporters, might allow single-use (-S) protectors as
 
 *Note: As EN draft is not public and is still a work-in-progress, I'm referring to Fred Pieri's work as "EN draft". Fred's work can be seen in his great [video](https://www.youtube.com/watch?v=EnRK16sgj8A) and [article](https://fredvol.bitbucket.io/Misc/jerk_analysis/p2/report_jerk_p2.html).*
 
-The main problems with the EN draft is that none of the previous points are being addressed.
+I believe the main problem with the EN draft is two-fold:
 
-Moreover instead of introducing a jerk test, they introduce a measure called HIC (or SIC).
+- it focuses only on time-based duration criteria
+- meanwhile avoiding the jerk (onset) criteria
 
-### Problems with HIC and "SIC"
+These two graphs are next to each other in the NASA 1959 Eiband study:
 
-HIC (Head Injury Criterion) sounds interesting, but I believe it's not a substitute for jerk limit.
+Page 78 shows the duration graph:
 
-I believe first we need to get the basic, wildly researched kinematic variables right: acceleration, jerk, time-based limits
+![nasa-duration](assets/nasa-duration.png)
 
-Only once we got the basic variables right, we can start evaluating if HIC and other composite measures would bring an improvement.
+Page 81 shows the onset = jerk graph:
 
-As for "SIC", I cannot wrap my head around the fact that the proposal takes something called "Head Injury Criterion" and changes an exponent from 2.5 -> 2 and renames it to "Spine Injury Criterion".
+![nasa-onset](assets/nasa-onset.png)
 
-<img src="assets/sic.gif" alt="sic">
+Looking at the duration graph, we can see that there is a middle section called "Limits upon which current ejection seats are designed".
 
-This is wrong on many levels. Science doesn't work like this. We cannot just invent medical "criterions" by changing names and exponents without doing medical studies.
+![nasa-duration-red](assets/nasa-duration-red.png)
 
-I understand the idea behind it: it is to replace the step function limits (white line below) with a single line. We adjust the exponent to get the line angle correct. [Fred's video](https://www.youtube.com/watch?v=EnRK16sgj8A) does a brilliant job of explaining it.
+This area clearly has to be tolerable: this is exactly what NASA arrived for as a design for their future ejector seats.
 
-<img src="assets/CleanShot 2025-12-29 at 14.28.20@2x.png" alt="SIC comparison">
+From the red graph, we can see that:
 
-But please don't call it "Spine Injury Criterion", call it "Time-Acceleration Limit" or similar. I believe it's worth discussing, it's an interesting idea, it's just the name which I cannot get over.
+- ~24 G is tolerable until 0.5 sec = 500 ms. This is way above anything we can possibly get in our 1.6 meter drop tests. 
+- The NASA injury limit for 50 ms is ~42 G. We'll see it's simply impossible to reach this with the proposed jerk limits.
 
+Meanwhile the current EN test limits is already 20x (!) stricter compared to the NASA value: only 25 ms allowed above 20 G. In the new draft it looks like an even lower value at around 15 ms (the white diagonal line):
 
+<img src="assets/hic-line.png" alt="SIC comparison">
 
-### Problems with time based limits
+Why is it a problem to propose stricter duration limits compared to NASA ejection seat recommendations? 
 
-Now we've arrived at what I believe is the biggest question in back protectors:
+Because we'll see that duration values are inversely correlated to jerk values, and requiring low duration values would actually hurt jerk behaviour.
+
+At this point we've arrived at what I believe is the biggest question in back protectors:
 
 **Are time based limits actually reflecting pilot injuries?**
 
@@ -250,16 +256,14 @@ Take this example from Fred's video.
 
 <img src="assets/CleanShot 2025-12-29 at 14.33.47@2x.png" alt="blue vs orange G">
 
-- The blue protector could be a below-average foam protector @ 40 G (Exoceat and Kanibal is at 36-37 G).
+- The blue protector could be a below-average foam protector @ 40 G (Exoceat and Kanibal is better at 36-37 G).
 - The orange protector could be a high quality inflatable airbag @ 31 G.
 
-The blue graph shows higher jerk (steeper sides) while the orange shows lower jerk (less steepness).
+The blue graph shows higher G and higher jerk (steeper sides) while the orange shows lower G and lower jerk (less steep sides).
 
-Fred reasons that the blue is the safer protector and this is reflected in the SIC measure he is proposing: the blue protector gets the lower SIC value (10) vs the orange one (11).
+Fred reasons that the blue is the safer protector and this is reflected in the SIC value he is proposing: the blue protector gets the lower SIC value (10) vs the orange one (11).
 
 <img src="assets/CleanShot 2025-12-29 at 18.56.51@2x.png" alt="blue vs orange SIC">
-
-
 
 This is exactly the opposite of what I've found in my research: I'd clearly choose the orange protector for my own protection today.
 
@@ -271,35 +275,50 @@ Moreover, if we look a bit on these graphs, we can see that jerk and time-based 
 
 This is confirmed by the existing EN test reports and their estimated jerk values:
 
-- Gin GR5: 17.5 ms | jerk ~5369 G/sec
+- Gin GR5: **17.5 ms** | jerk ~**5369 G/sec**
 
-- Submarine: 18.3 ms | jerk ~8000 G/sec
+- Submarine: **18.3 ms** | jerk ~**8000 G/sec**
 
-- Exoceat: 19.5 ms | jerk ~ 1245 G/sec
-- Kanibal: 19.6 ms | jerk ~1216 G/sec
-- Skywalk RXA3: 22.5 ms | jerk ~1186 G/sec
+- Exoceat: **19.5 ms** | jerk ~ **1245 G/sec**
+- Kanibal: **19.6 ms** | jerk ~**1216 G/sec**
+- Skywalk RXA3: **22.5 ms** | jerk ~**1186 G/sec**
 
-We can see that **protectors with the lowest jerk have the highest time-based limits.**
+We can see that **protectors with the lowest jerk values have the highest durations values** and the **protectors with the lowest duration values are all Koroyd**.
 
-*Note: this comparison was only for the "time over 20 G" value, not the full HIC computation. It'd be great to calculate the exact values for these 5 harnesses above.*
+I believe that by requiring these overly strict duration requirements, and not taking into account the jerk limits, we are actually killing the best protectors in the market.
 
-So here are my biggest problems with the HIC:
+**Proposed solution**
 
-- We don't know if HIC reflects real world injuries, whereas we know that high jerk does. The NASA studies and the pilot reports agree in this.
-- Time-based limits are inversely correlated with jerk. I'm afraid HIC is also behaving like this, possibly pushing us in the wrong direction and killing the safest protectors available today: inflatable airbags.
+I believe duration limits are actually not needed when we have jerk limits. 
 
-Of course this is just my view and is only based on a few dozen accident reports, so feel free to question it. I understand that the accident reports are just "anecdata", but they do correlate with the NASA study.
+Why? Have a look at the visualizer app on [harnessvis.hyperknot.com](https://harnessvis.hyperknot.com/)
 
+Even at 2000 G/sec average jerk, we can only reach 34 G so the 42 G limit is not relevant. And even if we count the "Time over 20 G" duration 2x because of a bounce, we are only at 2 * 14 = 28 ms, well below the NASA ejector seat's limit of 500 ms.
 
-
-**Proposed solution 1**: I'd propose to go lower on jerk limits for now and set up a website to collect as much "back protector incident report" as we can. If there were 50 fatalities in Switzerland and France alone in a single year, then I believe there are thousands of cases where a protector makes a difference between hospital and walking away.
-
-CIVL should set up a very simple to use "back protector incident report" website where pilots can write a few line about their incident outcomes and upload IGC files. With IGC files, we can analyse impact speeds, instead of just trusting pilot anecdotes.
+![CleanShot 2025-12-30 at 02.05.59@2x](assets/CleanShot 2025-12-30 at 02.05.59@2x.png)
 
 
 
-**Proposed solution 2**: Also, an interesting approach would be to make comp harnesses with multiple protectors and let the market figure out the answer to which one is safer.
+#### A comment on "SIC"
 
-For example, if Submarine 2 came out with an option of inflatable airbag and a honeycomb protector, within a few season pilots would settle on the one with better real-world performance.
+As for "SIC", I cannot wrap my head around the fact that the proposal takes something called "Head Injury Criterion", changes the exponent from 2.5 -> 2 and renames it to "Spine Injury Criterion".
 
-Of course this would require that the available space for a protector allow an inflatable protector to function correctly, for example 15 cm, but jerk limits would take care of that.
+<img src="assets/sic.gif" alt="sic">
+
+This is wrong on many levels. Science doesn't work like this. We cannot just invent medical "criterions" by changing names and exponents without doing medical studies.
+
+I understand the idea behind it: it is to replace the step function (yellow line) with a single line (white line). We adjust the exponent to get the line angle correct. [Fred's video](https://www.youtube.com/watch?v=EnRK16sgj8A) does a brilliant job of explaining it.
+
+<img src="assets/hic-line.png" alt="SIC comparison">
+
+But please don't call it "Spine Injury Criterion", call it "Time-Integrated Acceleration Criteria" as it's written a few seconds before. I believe it's worth discussing, it's an interesting idea, it's just the name which I disagree with.
+
+
+
+### 
+
+
+
+
+
+
