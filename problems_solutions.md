@@ -245,7 +245,7 @@ Based on the pilot reports I collected for the article [Protector Incident Resea
 
 Take this example from Fred's video.
 
-<img src="assets/CleanShot 2025-12-29 at 14.33.47@2x.png" alt="blue vs orange G">
+<img src="assets/fred-blue-orange.png" alt="blue vs orange G">
 
 - The blue protector could be a below-average foam protector @ 40 G (Exoceat and Kanibal are better at 36-37 G).
 - The orange protector could be a high-quality inflatable airbag @ 31 G.
@@ -254,7 +254,7 @@ The blue graph shows higher G and higher jerk (steeper sides) while the orange s
 
 Fred reasons that the blue is the safer protector and this is reflected in the SIC value he is proposing: the blue protector gets the lower SIC value (10) vs the orange one (11).
 
-<img src="assets/CleanShot 2025-12-29 at 18.56.51@2x.png" alt="blue vs orange SIC">
+<img src="assets/fred-blue-orange-sic.png" alt="blue vs orange SIC">
 
 This is exactly the opposite of what I've found in my research: I'd clearly choose the orange protector for my own protection today.
 
@@ -284,7 +284,7 @@ Why? Have a look at the visualizer app on [harnessvis.hyperknot.com](https://har
 
 Even at 2000 G/sec average jerk, we can only reach 34 G, so the 42 G limit is not relevant. And even if we count the "Time over 20 G" duration 2× because of a bounce, we are only at 2 * 14 = 28 ms, well below the NASA ejector seat limit of 500 ms.
 
-![CleanShot 2025-12-30 at 02.05.59@2x](assets/CleanShot 2025-12-30 at 02.05.59@2x.png)
+![harness visualizer](assets/harnessvis.png)
 
 #### A comment on "SIC"
 
