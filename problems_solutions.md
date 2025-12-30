@@ -222,9 +222,7 @@ Let's look at the values in the red area and above:
 
 The 24 G value is way above anything we can possibly get in a 1.6-meter drop test. The 42 G value is irrelevant as we'll never have 42 G with low jerk limits.
 
-Meanwhile, the current EN test limits are already 20× (!) stricter compared to the NASA values: only 25 ms is allowed above 20 G.
-
-The new draft introduces an even stricter value at around 15 ms (the white diagonal line):
+Meanwhile, the current EN test limits are already 20× (!) stricter compared to the NASA values: only 25 ms is allowed above 20 G. The new draft introduces an even stricter value at around 15 ms (the white diagonal line):
 
 <img src="assets/hic-line.png" alt="SIC comparison">
 
@@ -234,7 +232,7 @@ Because we'll see that duration values are inversely correlated with jerk values
 
 At this point, we've arrived at what I believe is the biggest question in back protectors:
 
-**Do time-based limits actually reflect pilot injuries?**
+**Do time duration limits actually reflect pilot injuries?**
 
 Based on the pilot reports I collected for the article [Protector Incident Research: Koroyd vs Airbag](https://hyperpilot.substack.com/p/protector-incident-research-koroyd), I believe the answer is **no**.
 
