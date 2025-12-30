@@ -27,13 +27,13 @@ That said, even if the standard became free tomorrow, it wouldn't fix the real i
 
 ### 1. Lack of weight range
 
-The biggest safety problem by far is that there are no weight ranges defined for protector certification: every protector is tested on a **fixed 50 kg dummy weight**.
+The biggest safety problem by far is that there are no weight ranges defined for protector certification: every protector is tested with a **fixed 50 kg dummy**.
 
-This is such a serious issue that I believe there is no point of talking about any measurement until this basic flaw is addressed.
+This is such a serious issue that I believe there is no point in talking about any measurement until this basic flaw is addressed.
 
 #### The ball drop experiment
 
-Before I go into more details, let's imagine an experiment: drop two balls with the same size and shape from the same drop height onto the same foam mattress. One ball is 1 kg, the other is 10 kg.
+Before I go into more detail, let's imagine an experiment: drop two balls with the same size and shape from the same height onto the same foam mattress. One ball is 1 kg, the other is 10 kg.
 
 - They hit the foam at the same speed $v = \sqrt{2gh}$
 - But the 10 kg ball hits with 10× more impact energy $E = mgh$
@@ -50,32 +50,32 @@ So the compression depth is:
 
 $$x = \sqrt{\tfrac{2mgh}{k}}$$
 
-That means $x \propto \sqrt{m}$, so the 10x heavier ball compresses it $\sqrt{10} \approx 3.2$ times deeper.
+That means $x \propto \sqrt{m}$, so the 10× heavier ball compresses it $\sqrt{10} \approx 3.2$ times deeper.
 
 So if the 1 kg ball needs about 10 cm of compression to stop, the 10 kg ball might need about 32 cm.
 
-**Thick foam vs thin foam:**
+**Thick foam vs. thin foam:**
 
 - With a thick mattress (say 50 cm), both balls can be stopped smoothly because there is plenty of thickness available.
 - If you keep making the foam thinner, eventually you reach a point where the lighter ball can still be stopped smoothly, but the heavier ball reaches the foam's limit and **bottoms out**.
 
 **Bottoming out** means the foam reaches the end of its usable compression and stiffens. From this point on, forces and peak deceleration spike sharply, effectively like hitting a hard layer.
 
-I believe when such bottoming out happens, we can measure extreme acceleration and jerk values - way above any safe limit we are normally even discussing in our standards.
+I believe when such bottoming out happens, we can measure extreme acceleration and jerk values - way above any safe limit we normally even discuss in our standards.
 
-_Note: I'm looking for drop test CSV files of such bottomed out drop tests on foam protectors. If you can, please share sample files._
+*Note: I'm looking for drop test CSV files of such bottomed-out drop tests on foam protectors. If you can, please share sample files.*
 
 #### Drop tests
 
-Now you can see the core of the problem: if we make a drop test with a 50 kg dummy, we have no information about what happens on the same protector with a 60-70-80 kg dummy.
+Now you can see the core of the problem: if we perform a drop test with a 50 kg dummy, we have no information about what happens to the same protector with a 60, 70, or 80 kg dummy.
 
 It might bottom out at 70 kg or it might not. No one knows, possibly not even the manufacturers!
 
 **The only way to know if a protector bottoms out on a 70 kg dummy is to test it with a 70 kg dummy.** No way around it.
 
-At this point I have to note that I'm absolutely puzzled by the fact that in our industry where both paragliders and rescue parachutes have weight ranges by definition, we don't have weight ranges for back protectors.
+At this point, I have to note that I'm absolutely puzzled by the fact that in our industry, where both paragliders and rescue parachutes have weight ranges by definition, we don't have weight ranges for back protectors.
 
-**Proposed solution**: introduce weight ranges. Test each protector at both ends of the weight range.
+**Proposed solution**: Introduce weight ranges. Test each protector at both ends of the weight range.
 
 
 
