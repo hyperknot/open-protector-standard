@@ -193,17 +193,16 @@ Who decides which class to use: the manufacturers submit their product in the cl
 The decision between -S and -M would be enforced at the competition level; for example, cross-country Cat1 events could require multi-use (-M) protectors.
 
 Meanwhile, H&F events with supporters might allow single-use (-S) protectors as well, as a supporter in the car can carry a spare protector.
-
 ## Problems with the upcoming EN draft
 
-*Note: As EN draft is not public and is still a work-in-progress, I'm referring to Fred Pieri's work as "EN draft". Fred's work can be seen in his great [video](https://www.youtube.com/watch?v=EnRK16sgj8A) and [article](https://fredvol.bitbucket.io/Misc/jerk_analysis/p2/report_jerk_p2.html).*
+*Note: As the EN draft is not public and is still a work-in-progress, I'm referring to Fred Pieri's work as "EN draft". Fred's work can be seen in his great [video](https://www.youtube.com/watch?v=EnRK16sgj8A) and [article](https://fredvol.bitbucket.io/Misc/jerk_analysis/p2/report_jerk_p2.html).*
 
-I believe the main problem with the EN draft is two-fold:
+I believe the main problem with the EN draft is twofold:
 
 - it introduces extremely strict time duration limits
-- meanwhile entirely avoiding jerk (onset) limits
+- while entirely omitting jerk (onset) limits
 
-This would result in killing possibly the safest harnesses today (inflatable airbags) and restricting the direction of protector developments onto honeycomb protectors.
+This would result in effectively killing arguably the safest harnesses available today (inflatable airbags) and restricting the direction of protector development to honeycomb protectors.
 
 These two graphs are next to each other in the NASA 1959 Eiband study:
 
@@ -215,41 +214,41 @@ Page 81 shows the onset = jerk graph:
 
 ![nasa-onset](assets/nasa-onset.png)
 
-They come hand-in-hand, we cannot focus on one and skip the other.
+They go hand-in-hand; we cannot focus on one and skip the other.
 
 Looking at the duration graph, we can see that there is a middle section called "Limits upon which current ejection seats are designed".
 
 ![nasa-duration-red](assets/nasa-duration-red.png)
 
-This area clearly has to be tolerable: this is exactly what NASA arrived for as a design for their future ejector seats.
+This area clearly has to be tolerable: this is exactly what NASA arrived at as a design for their future ejector seats.
 
 From the red graph, we can see that:
 
-- ~24 G is tolerable until 0.5 sec = 500 ms. This is way above anything we can possibly get in a 1.6 meter drop tests. 
-- The NASA injury limit for 50 ms is ~42 G. We'll see it's simply impossible to reach this with the proposed jerk limits.
+- ~24 G is tolerable for up to 0.5 sec = 500 ms. This is way above anything we can possibly get in a 1.6-meter drop test.
+- The NASA injury limit for 50 ms is ~42 G. We'll see that it's simply impossible to reach this with the proposed jerk limits.
 
-Meanwhile the current EN test limits is already 20x (!) stricter compared to the NASA value: only 25 ms is allowed above 20 G. 
+Meanwhile, the current EN test limits are already 20× (!) stricter compared to the NASA values: only 25 ms is allowed above 20 G.
 
-In the new draft it introduces an even stricter value at around 15 ms (the white diagonal line):
+The new draft introduces an even stricter value at around 15 ms (the white diagonal line):
 
 <img src="assets/hic-line.png" alt="SIC comparison">
 
-Why is it a problem to propose stricter duration limits compared to NASA ejection seat recommendations? 
+Why is it a problem to propose stricter duration limits compared to NASA ejection seat recommendations?
 
-Because we'll see that duration values are inversely correlated to jerk values, and requiring low duration values would actually hurt low jerk behaviour.
+Because we'll see that duration values are inversely correlated with jerk values, and requiring low duration values would actually hurt low-jerk behavior.
 
-At this point we've arrived at what I believe is the biggest question in back protectors:
+At this point, we've arrived at what I believe is the biggest question in back protectors:
 
-**Are time based limits actually reflecting pilot injuries?**
+**Do time-based limits actually reflect pilot injuries?**
 
-I believe based on the pilot reports I collected for the article: [Protector Incident Research: Koroyd vs Airbag](https://hyperpilot.substack.com/p/protector-incident-research-koroyd), that the answer is **no**.
+Based on the pilot reports I collected for the article [Protector Incident Research: Koroyd vs Airbag](https://hyperpilot.substack.com/p/protector-incident-research-koroyd), I believe the answer is **no**.
 
 Take this example from Fred's video.
 
 <img src="assets/CleanShot 2025-12-29 at 14.33.47@2x.png" alt="blue vs orange G">
 
-- The blue protector could be a below-average foam protector @ 40 G (Exoceat and Kanibal is better at 36-37 G).
-- The orange protector could be a high quality inflatable airbag @ 31 G.
+- The blue protector could be a below-average foam protector @ 40 G (Exoceat and Kanibal are better at 36-37 G).
+- The orange protector could be a high-quality inflatable airbag @ 31 G.
 
 The blue graph shows higher G and higher jerk (steeper sides) while the orange shows lower G and lower jerk (less steep sides).
 
@@ -261,48 +260,42 @@ This is exactly the opposite of what I've found in my research: I'd clearly choo
 
 **Why?**
 
-Because real-world pilot injury reports show that the best protectors available today are **low G, low jerk full-sized airbags**, exactly like the orange protector.
+Because real-world pilot injury reports show that the best protectors available today are **low-G, low-jerk full-sized airbags**, exactly like the orange protector.
 
-Moreover, if we look a bit on these graphs, we can see that jerk and duration limits are inversely correlated: the steeper the curve => the shorter the "time above 20 G" horizontal line is.
+Moreover, if we look a bit closer at these graphs, we can see that jerk and duration limits are inversely correlated: the steeper the curve $\Rightarrow$ the shorter the "time above 20 G" horizontal line is.
 
 This is confirmed by the existing EN test reports and their estimated jerk values:
 
 - Gin GR5: **17.5 ms** | jerk ~**5369 G/sec**
-
 - Submarine: **18.3 ms** | jerk ~**8000 G/sec**
-
-- Exoceat: **19.5 ms** | jerk ~ **1245 G/sec**
+- Exoceat: **19.5 ms** | jerk ~**1245 G/sec**
 - Kanibal: **19.6 ms** | jerk ~**1216 G/sec**
 - Skywalk RXA3: **22.5 ms** | jerk ~**1186 G/sec**
 
-We can see that **protectors with the lowest jerk values have the highest durations values** and the **protectors with the lowest duration values are all Koroyd**.
+We can see that **protectors with the lowest jerk values have the highest duration values** and the **protectors with the lowest duration values are all Koroyd**.
 
-I believe that by requiring these overly strict duration requirements, and not taking into account the jerk limits, we are actually killing the best protectors in the market.
+I believe that by requiring these overly strict duration requirements, and not taking into account the jerk limits, we are actually killing the best protectors on the market.
 
 **Proposed solution**
 
-I believe time duration limits are actually not needed when we have jerk limits. 
+I believe time duration limits are actually not needed when we have jerk limits.
 
 Why? Have a look at the visualizer app on [harnessvis.hyperknot.com](https://harnessvis.hyperknot.com/)
 
-Even at 2000 G/sec average jerk, we can only reach 34 G so the 42 G limit is not relevant. And even if we count the "Time over 20 G" duration 2x because of a bounce, we are only at 2 * 14 = 28 ms, well below the NASA ejector seat's limit of 500 ms.
+Even at 2000 G/sec average jerk, we can only reach 34 G, so the 42 G limit is not relevant. And even if we count the "Time over 20 G" duration 2× because of a bounce, we are only at 2 * 14 = 28 ms, well below the NASA ejector seat limit of 500 ms.
 
 ![CleanShot 2025-12-30 at 02.05.59@2x](assets/CleanShot 2025-12-30 at 02.05.59@2x.png)
 
-
-
 #### A comment on "SIC"
 
-As for "SIC", I cannot wrap my head around the fact that the proposal takes something called "Head Injury Criterion", changes the exponent from 2.5 -> 2 and renames it to "Spine Injury Criterion".
+As for "SIC", I cannot wrap my head around the fact that the proposal takes something called "Head Injury Criterion", changes the exponent from 2.5 to 2 and renames it to "Spine Injury Criterion".
 
 <img src="assets/sic.gif" alt="sic">
 
-This is wrong on many levels. Science doesn't work like this. We cannot just invent medical "criterions" by changing names and exponents without doing medical studies.
+This is wrong on many levels. Science doesn't work like this. We cannot just invent medical "criteria" by changing names and exponents without doing medical studies.
 
 I understand the idea behind it: it is to replace the step function (yellow line) with a single line (white line). We adjust the exponent to get the line angle correct. [Fred's video](https://www.youtube.com/watch?v=EnRK16sgj8A) does a brilliant job of explaining it.
 
 <img src="assets/hic-line.png" alt="SIC comparison">
 
-But please don't call it "Spine Injury Criterion", call it "Time-Integrated Acceleration Criteria" as it's written a few seconds before. I believe it's worth discussing, it's an interesting idea, it's just the name which I disagree with.
-
-
+But please don't call it "Spine Injury Criterion"; call it "Time-Integrated Acceleration Criteria" as it's written a few seconds before. I believe it's worth discussing, it's an interesting idea, it's just the name which I disagree with.
