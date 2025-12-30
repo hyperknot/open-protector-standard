@@ -265,7 +265,10 @@ This is confirmed by the existing EN test reports and their estimated jerk value
 - Kanibal: **19.6 ms** | jerk ~**1216 G/sec**
 - Skywalk RXA3: **22.5 ms** | jerk ~**1186 G/sec**
 
-We can see that **protectors with the lowest jerk values have the highest duration values** and the **protectors with the lowest duration values are all Koroyd**.
+We can see that:
+
+- protectors with the **lowest duration values** are all **Koroyd**
+- protectors with the **lowest jerk values** have the **highest duration values**
 
 I believe that by requiring these overly strict duration requirements, and not taking into account the jerk limits, we are actually killing the best protectors on the market.
 
