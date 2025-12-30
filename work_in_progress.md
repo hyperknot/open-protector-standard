@@ -19,4 +19,3 @@ It remains undecided whether protectors should be tested:
 ## Dummy Weight Distribution
 
 The current standard specifies total test weight but does not define how supplemental weights should be distributed on the dummy. This may affect impact dynamics and requires specification.
-

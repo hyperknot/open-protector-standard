@@ -128,8 +128,6 @@ The existing standard addresses the compression fracture direction quite well us
 
 <img src="assets/fixed-drop-test.jpeg" alt="fixed-drop-test" width="300">
 
-
-
 What's not addressed are **direct impact injuries**.
 
 Direct impact injuries are extremely common during failed takeoffs and landings with stalled gliders. Previous generation racing harnesses covered this area quite well, and many non-competition XC harnesses cover it today. The problem is that some aerodynamically optimised harnesses lack this protection altogether.
@@ -141,7 +139,7 @@ Proposed new testing points:
 - **thoracolumbar junction (T11 - L2 region)**
 - **lumbosacral junction (L5 - S1 region)**
 
-Both are critical points for direct impact injuries. *(Anatomy illustration from Wikipedia.)*
+Both are critical points for direct impact injuries. _(Anatomy illustration from Wikipedia.)_
 
 <img src="assets/vertebrae-wikipedia.png" alt="Vertebrae column" width="200">
 
@@ -217,8 +215,8 @@ This area clearly has to be tolerable: this is exactly what NASA arrived at as a
 
 Let's look at the values in the red area and above:
 
-- ~24 G is tolerable for up to 0.5 sec = 500 ms. 
-- The NASA injury limit for 50 ms is ~42 G. 
+- ~24 G is tolerable for up to 0.5 sec = 500 ms.
+- The NASA injury limit for 50 ms is ~42 G.
 
 The 24 G value is way above anything we can possibly get in a 1.6-meter drop test. The 42 G value is irrelevant as we'll never have 42 G with low jerk limits.
 

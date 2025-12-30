@@ -14,7 +14,7 @@ These are the graphs in each of the NASA documents. The triangular parts are jer
 
 ![NASA explanation](assets/onset-graph.png)
 
-From the car example, we all know that humans are sensitive to 1. and 3. more than the constant part of braking. A good driver can perform a surprisingly strong braking while not upsetting their passengers, because they control the brake smoothly in parts 1. and 3. That's exactly how good protectors with low jerk behave. 
+From the car example, we all know that humans are sensitive to 1. and 3. more than the constant part of braking. A good driver can perform a surprisingly strong braking while not upsetting their passengers, because they control the brake smoothly in parts 1. and 3. That's exactly how good protectors with low jerk behave.
 
 **Why not just lower G limits?**
 
@@ -43,12 +43,6 @@ None of this is a rule set in stone; it's just easier to make harnesses like thi
 Manufacturers can use 3D shaping to make the front part narrower compared to the back part, or to add a protector "bump" on the back.
 
 We can also work on making XC racing less gaggle-focused via rules and task setting.
-
-
-
-
-
-
 
 ### Isn't measuring jerk complicated and expensive?
 
