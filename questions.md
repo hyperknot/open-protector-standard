@@ -1,5 +1,27 @@
 # Questions
 
+### Why is a jerk limit necessary? Isn't a low acceleration limit a better idea?
+
+Both variables have very different effects on the human body. The best example is when you are braking in a car. Let's suppose you are driving on the highway at 120 km/h. You see a traffic jam in front of you, and you decide to brake. Not an emergency braking, just a confident, efficient brake so you can slow down smoothly.
+
+How do you do it in a nice way, so your passengers are not upset?
+
+1. You push the pedal down smoothly: this is positive jerk / onset rate
+2. You keep the pedal at a fixed position for most of the braking: this is peak G / acceleration
+3. You let the pedal up smoothly: this is negative jerk
+
+These are the graphs in each of the NASA documents. The triangular parts are jerk / onset rate, and the horizontal part is acceleration / duration.
+
+![NASA explanation](assets/onset-graph.png)
+
+From the car example, we all know that humans are sensitive to 1. and 3. more than the constant part of braking. A good driver can perform a surprisingly strong braking while not upsetting their passengers, because they control the brake smoothly in parts 1. and 3. That's exactly how good protectors with low jerk behave. 
+
+**Why not just lower G limits?**
+
+If you look at existing harnesses, good harnesses and bad harnesses have almost the same G limits. For example, the WV XR7 has about 38-40 G. Meanwhile, the Gin Genie Race 5 has 40 G.
+
+However, these harnesses have vastly different real-world behaviour, so the G limit doesn't reflect their real-world performance. In contrast, jerk measurement does, as the GR5 has multiple times the jerk of the XR7.
+
 ### Wouldn't heavy pilots need bigger protectors, thus giving them an aerodynamic disadvantage?
 
 This might seem surprising, but heavier pilots don't actually need thicker protectors. They need a different protector material, like stiffer foams in the case of foam protectors. A protector certified for 50 - 60 kg could be equally thin as one certified for 100 - 120 kg.
@@ -22,11 +44,9 @@ Manufacturers can use 3D shaping to make the front part narrower compared to the
 
 We can also work on making XC racing less gaggle-focused via rules and task setting.
 
-### Who certifies it?
 
-In the current form, no one. The point of the Open Protector Standard is that it can be adopted by CIVL, EN WG6, DHV, or any other standards body.
 
-So in practice, this could become the CIVL Protector Standard and be certified like CCC gliders today. Or DHV can adopt it into their standard. Or EN can address these points, and then we can make this standard shorter and shorter over time.
+
 
 
 
@@ -43,6 +63,12 @@ The only value we need to agree on here is the CFC class. I propose CFC 75, base
 A bigger problem is self-resonance / ringing of badly attached sensors on the drop test equipment. But this part needs to be fixed anyway, as it can invalidate all kinds of tests, not just jerk measurements. This shows up as resonance / waves on the jerk graph.
 
 Once we have the sensor attachments fixed and the CFC filter applied, getting jerk from acceleration is actually quite simple. I propose calculating the derivative using the Savitzky-Golay filter as it results in smooth derivatives. The only parameter we need to agree on is the window size, for which I propose 15 ms.
+
+### Who certifies it?
+
+In the current form, no one. The point of the Open Protector Standard is that it can be adopted by CIVL, EN WG6, DHV, or any other standards body.
+
+So in practice, this could become the CIVL Protector Standard and be certified like CCC gliders today. Or DHV can adopt it into their standard. Or EN can address these points, and then we can make this standard shorter and shorter over time.
 
 ### Isn't this expensive for small manufacturers?
 
