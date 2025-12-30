@@ -124,11 +124,11 @@ There are two kinds of injuries we need to take into account:
 
 <img src="assets/directhit.png" alt="directhit">
 
-The existing standard addresses the compression fracture direction quite well using the following dummy configuration.
+The existing standard addresses the compression fracture direction quite well using the following dummy configuration. _(Illustration based on the one from Fred's video; I fixed the angle and made it cleaner.)_
 
-<img src="assets/fixed-drop-test.jpeg" alt="fixed-drop-test" width="250">
+<img src="assets/fixed-drop-test.jpeg" alt="fixed-drop-test" width="300">
 
-_(Illustration based on the one from Fred's video; I fixed the angle and made it cleaner.)_
+
 
 What's not addressed are **direct impact injuries**.
 
@@ -141,9 +141,7 @@ Proposed new testing points:
 - **thoracolumbar junction (T11 - L2 region)**
 - **lumbosacral junction (L5 - S1 region)**
 
-Both are critical points for direct impact injuries.
-
-Anatomy illustration from Wikipedia:
+Both are critical points for direct impact injuries. *(Anatomy illustration from Wikipedia.)*
 
 <img src="assets/vertebrae-wikipedia.png" alt="Vertebrae column" width="200">
 
