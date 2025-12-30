@@ -165,11 +165,9 @@ I'm not proposing to adopt the NASA limit. I'm proposing to re-measure this valu
 
 ### 5. Single-use protectors in competitions
 
-Another big problem with protectors like Koroyd is that they are single-use materials: if they are involved in a crash, they'll crumple and have to be replaced.
+Another big problem with protectors like Koroyd is that they are single-use materials: if they are involved in a crash, they'll crumple and have to be replaced. (Source: DHV)
 
 <img src="assets/koroyd-crumpled.jpg" alt="Koroyd crumpled" width="600">
-
-(Source: DHV)
 
 This might not be a problem for a hobbyist pilot making an XC flight, as they can just wait with their next flight until they buy a new protector.
 
@@ -217,10 +215,12 @@ Looking at the duration graph, we can see that there is a middle section called 
 
 This area clearly has to be tolerable: this is exactly what NASA arrived at as a design for their future ejector seats.
 
-From the red graph, we can see that:
+Let's look at the values in the red area and above:
 
-- ~24 G is tolerable for up to 0.5 sec = 500 ms. This is way above anything we can possibly get in a 1.6-meter drop test.
-- The NASA injury limit for 50 ms is ~42 G. We'll see that it's simply impossible to reach this with the proposed jerk limits.
+- ~24 G is tolerable for up to 0.5 sec = 500 ms. 
+- The NASA injury limit for 50 ms is ~42 G. 
+
+The 24 G value is way above anything we can possibly get in a 1.6-meter drop test. The 42 G value is irrelevant as we'll never have 42 G with low jerk limits.
 
 Meanwhile, the current EN test limits are already 20× (!) stricter compared to the NASA values: only 25 ms is allowed above 20 G.
 
