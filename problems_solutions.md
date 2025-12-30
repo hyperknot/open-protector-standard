@@ -81,85 +81,76 @@ At this point, I have to note that I'm absolutely puzzled by the fact that in ou
 
 ### 2. Under-calculated dummy weight
 
-There is another problem with the existing test's 50 kg dummy weight: it has been extremely under-calculated.
+There is another problem with the existing test's 50 kg dummy weight: it is extremely under-calculated.
 
-It is based on the faulty assumption that if we measure the forces acting on the pilot, then we only care about the weight compressing the spine, so the current formula took the average adult torso weight of 50 kg and used it for decades.
+It is based on the faulty assumption that if we measure the forces acting on the pilot, we only care about the weight compressing the spine. Consequently, the current formula took the average adult torso weight of 50 kg and has used it for decades.
 
-But here lies a very serious logical fallacy! The primary criteria for all our measurements is to make sure that the protectors don't bottom out: it doesn't matter what's compressing them, it can be a pilot + harness + ballast or even a bag of sand! We are measuring how the protector behaves under real-world compression, thus we have to simulate the real-world compression events. 
+But here lies a very serious logical fallacy! The primary criterion for all our measurements is to ensure that the protectors don't bottom out: it doesn't matter what's compressing them—it can be a pilot + harness + ballast or even a bag of sand! We are measuring how the protector behaves under real-world compression; thus, we have to simulate real-world compression events.
 
-Which, for a competition pilot flying at 125 kg take off weight cannot be a 50 kg dummy weight!
+For a competition pilot flying at 125 kg take-off weight, this cannot be a 50 kg dummy!
 
 <img src="assets/sandbag.jpeg" alt="Illustration with a bag of sand" width="600">
 
 **Proposed solution:**
 
-**Test with 80% of clip-in weight** - (clip in-weight means: take-off-weight excluding glider)
+**Test with 80% of clip-in weight** (clip-in weight means: take-off weight excluding the glider).
 
-This assumes that the majority of the falls happen leg first, hence the 20% reduction.
+This assumes that the majority of falls happen leg-first, hence the 20% reduction.
 
 Still, in cases where the pilot arrives back-first, this number would be close to 100%.
 
-Quick estimation for the leg-first case: 
+Quick estimation for the leg-first case:
 
-- a comp pilot is flying a 125 kg glider @ 120 kg
-- glider is about 6 kg
-- => the pilots clip-in weight is 114 kg
+- a comp pilot is flying a 125 kg glider at 120 kg
+- the glider is about 6 kg
+- => the pilot's clip-in weight is 114 kg
 
-I believe a realistic dummy weight for such pilot would be about:
+I believe a realistic dummy weight for such a pilot would be about:
 
 114 kg * 0.8 => **91 kg**.
 
-It is **almost double **of the currently used **50 kg dummy** weight!
+It is **almost double** the currently used **50 kg dummy** weight!
 
 ---
 
+I believe there is no point in even discussing measurements, G-force, jerk, time-based values, or composite measures like HIC until we put pilots on protectors that are overloaded by almost a factor of 2!
 
-
-I believe there is no point of even discussing measurements, G, jerk, time based values or composite measures like HIC until we are putting pilots on protectors which are overloaded by almost a factor of 2x!
-
-If pilots were getting injured on overloaded rescue parachutes, it'd be a scandal. Yet with protectors we continue like nothing happens and start discussing complex measurements like HIC before even addressing the basic fault in the standard.
-
-
+If pilots were getting injured on overloaded rescue parachutes, it would be a scandal. Yet with protectors, we continue as if nothing is happening and start discussing complex measurements like HIC before even addressing the basic fault in the standard.
 
 ---
 
 ### 3. Spine area not protected
 
-There are two kind of injuries we need to take into account.
+There are two kinds of injuries we need to take into account:
 
 1. **Compression fractures**
-1. **Direct impact injuries**
-
-
+2. **Direct impact injuries**
 
 <img src="assets/directhit.png" alt="directhit">
 
-The existing standard takes care of the compression fracture direction quite well, using the following dummy configuration.
-
-
+The existing standard addresses the compression fracture direction quite well using the following dummy configuration.
 
 <img src="assets/fixed-drop-test.jpeg" alt="fixed-drop-test" width="250">
 
-*(Illustration started as the one from Fred's video, I fixed the angle and made it cleaner.)*
+*(Illustration based on the one from Fred's video; I fixed the angle and made it cleaner.)*
 
+What's not addressed are **direct impact injuries**.
 
+Direct impact injuries are extremely common during failed takeoffs and landings with stalled gliders. Previous generation racing harnesses covered this area quite well, and many non-competition XC harnesses cover it today. The problem is that some aerodynamically optimised harnesses lack this protection altogether.
 
-What's not addressed is **direct impact injuries**.
-
-Direct impact injuries are extremely common on failed takeoff and landings with stalled gliders. Previous generation racing harnesses have covered this area quite well, and many non-competition XC harnesses cover it today. The problem is that some aerodynamically optimised harnesses lack this protection altogether.
-
-**Proposed solution:** **Add 2 more testing points along the spine**, in addition to the sitting position test point being done today.
+**Proposed solution: Add 2 more testing points along the spine**, in addition to the sitting position test point currently used.
 
 Proposed new testing points:
 
-- **thoracolumbar junction (T11 - L2 region)**
-- **lumbosacral junction (L5 - S1 region)**
+- **thoracolumbar junction (T11 – L2 region)**
+- **lumbosacral junction (L5 – S1 region)**
 
-both critical points for direct impact injuries.
+Both are critical points for direct impact injuries.
 
 Anatomy illustration from Wikipedia:
 
 <img src="assets/vertebrae-wikipedia.png" alt="Vertebrae column" width="200">
+
 
 ### 4. Missing jerk limit
 
@@ -181,7 +172,7 @@ I'm not proposing to take the NASA limit. I'm proposing to re-measure this value
 
 
 
-### 5. Single-use protectors allowed on competitions
+### 5. Single-use protectors on competitions
 
 An other big problem with protectors like Koroyd is they are single-use materials: if they get crashed, they'll crumple and have to be replaced.
 
