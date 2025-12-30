@@ -1,25 +1,25 @@
-# Background, problems and proposed solutions
+# Problems and Solutions
 
-The aim of Open Protector Standard is to address the problems with the EN harness back protector standard.
+The aim of the Open Protector Standard is to address the problems with the EN harness back protector standard.
 
-The problems are two fold:
+The problems are twofold:
 
-1. The EN standard is not public - it is a copyrighted standard only accessible behind a paywall.
-2. The standard itself has serious safety problems in both the current versions and in the up-and-coming EN draft.
+1. The EN standard is not public—it is a copyrighted standard only accessible behind a paywall.
+1. The standard itself has serious safety problems in both the current versions and the upcoming EN draft.
 
 ## Standard behind a paywall
 
-Now, the first point is not the manufacturers' fault and is an active debate in the EU right now. (This might sound strange to international readers, but currently both paragliders and harnesses are certified according to an EU standard.)
+The first point is not the manufacturers' fault and is currently an active debate in the EU. (This might sound strange to international readers, but both paragliders and harnesses are certified according to an EU standard.)
 
-Recently, in 2024 the European Court of Justice ruled that certain European safety standards must be free to access (Case C-588/21 P). The logic was simple: if you're legally required to follow a standard, that standard is basically law. And you shouldn't have to pay to read the law.
+In 2024, the European Court of Justice ruled that certain European safety standards must be free to access (Case C-588/21 P). The logic was simple: if you're legally required to follow a standard, that standard is effectively law. And you shouldn't have to pay to read the law.
 
-This ruling specifically applies to "harmonised standards" - standards that are officially linked to EU safety regulations. Our harness back protector standards don't fall into that category, so this ruling doesn't automatically open them up.
+This ruling specifically applies to "harmonised standards"—standards that are officially linked to EU safety regulations. Our harness back protector standards don't fall into that category, so this ruling doesn't automatically open them up.
 
-But the principle still makes sense for us: we're talking about equipment that protects pilots from spine injuries. Pilots, manufacturers, and safety researchers should all be able to read and evaluate how back protectors are being tested. Hiding safety standards behind a paywall doesn't help anyone.
+But the principle still makes sense for us: we're talking about equipment that protects pilots from spinal injuries. Pilots, manufacturers, and safety researchers should all be able to read and evaluate how back protectors are being tested. Hiding safety standards behind a paywall doesn't help anyone.
 
-That said, even if the standard became free tomorrow, it wouldn't fix the real issue. The real issue is that the standard has serious safety flaws which need to be addressed.
+That said, even if the standard became free tomorrow, it wouldn't fix the real issue: the standard has serious safety flaws that need to be addressed.
 
-**Proposed solution**: make an open-source standard which CIVL / EN WG6 / DHV can adopt and contribute to.
+**Proposed solution**: Create an open-source standard that CIVL / EN WG6 / DHV can adopt and contribute to.
 
 
 
@@ -316,7 +316,6 @@ But please don't call it "Spine Injury Criterion", call it "Time-Integrated Acce
 
 
 ### 
-
 
 
 
